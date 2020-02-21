@@ -230,7 +230,9 @@ object Collections extends App {
         6. These descriptions may be useful later. Included in the “symbol” XML element is an attribute containing
         the symbol number. Create a Map from the symbol number to the description. Verify this is accurate by
         manually accessing symbol values from the forecast and checking that the description matches the XML document.
+  */
 
+   /*
         7. What are the high and low temperatures over the next 24 hours?
 
         8. What is the average temperature in this weather forecast? You can use the “value” attribute in the
