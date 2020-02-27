@@ -206,6 +206,23 @@ def productFromStrings(int1: String, int2: String): Int = {
   }
   noOption(0) * noOption(1)
 }
-  println(productFromStrings("123", "45.6"))
+  println(productFromStrings("123", "456"))
+
+  def wrapJVMCalls(call: String): String = {
+    val called: Option[String] = try {
+      Option(System.getProperty(call))
+    } catch {  case e: Exception => Option(s"$e  ¯\\_(ツ)_/¯  ") }
+    called match {
+      case Some(i) => i.toString
+      case None => "None"
+    }
+  }
+  println(wrapJVMCalls(""))
+
+  val starBreak = "\n" + ("*"*100) + "\n"
+  println(starBreak)
+
+  println("GitHub RssReader ")
+
 
 }
